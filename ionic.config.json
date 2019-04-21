@@ -1,0 +1,8 @@
+{
+  "name": "munti",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "8a4a2567"
+}

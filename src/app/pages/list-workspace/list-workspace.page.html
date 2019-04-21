@@ -1,0 +1,320 @@
+<!-- <ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+        
+</ion-header> -->
+
+<div padding style="background-color:rgb(51, 211, 149);">
+      <!-- <ion-buttons slot="start" style="color:white">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons> -->
+      <ion-button fill="clear" (click)="alertBack()" style="color:white">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+      <h1 text-center style="font-weight:bolder; color:white">
+          Let's start listing your product
+      </h1>
+      <br>
+  </div>
+<ion-content >
+  
+  <div padding>
+    <form #f="ngForm" (ngSubmit)="post(f)">
+      <div  [class.a]="a">
+         <h4 style="font-weight:bolder;">
+              Tell us something about your product.
+          </h4>
+          <br>
+            <ion-label position="stacked">Product Name</ion-label>
+            <ion-item class="input-style">
+              <ion-input name="title" ngModel placeholder="Enter your Product's name"></ion-input>
+            </ion-item>
+            <br>
+            <ion-label position="stacked">Description</ion-label>
+            <ion-item class="input-style">
+              <ion-textarea name="description" ngModel placeholder="Type something about your product..."></ion-textarea>
+            </ion-item>   
+            <br>
+            <br>
+            <ion-button color="main" (click)="next('b')"  shape="round" style="float:right">
+              Next 
+              <ion-icon name="arrow-round-forward"></ion-icon>
+            </ion-button>
+            <br>
+            <br>
+            <br>
+        </div>
+         <div [class.b]="b">
+            <ion-button fill="clear" (click)="prev('a')" style="color:black; ">
+              <ion-icon name="arrow-round-back"></ion-icon>
+              Back
+            </ion-button>
+            <h4 style="font-weight:bolder;">
+               What kind of product are you listing?
+            </h4>
+            <br>
+            <ion-list>
+                <ion-radio-group name="type" ngModel>
+                  <ion-label position="stacked">Product Type</ion-label>
+                  
+                  <ion-item>
+                    <ion-label>Food</ion-label>
+                    <ion-radio slot="start" value="Food" checked></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Medicine</ion-label>
+                    <ion-radio slot="start" value="Medicine"></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Service</ion-label>
+                    <ion-radio slot="start" value="Service"></ion-radio>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>Pet Needs</ion-label>
+                    <ion-radio slot="start" value="Pet Needs"></ion-radio>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>Clothing</ion-label>
+                    <ion-radio slot="start" value="Clothing"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+              </ion-list>
+              <ion-button color="main" (click)="next('c')" shape="round" style="float:right">
+                 Next 
+                <ion-icon name="arrow-round-forward"></ion-icon>
+              </ion-button>
+              <br>
+              <br>
+              <br>
+         </div>
+          <!-- <div [class.c]="c">
+              <ion-button fill="clear"  (click)="prev('b')" style="color:black; ">
+                  <ion-icon name="arrow-round-back"></ion-icon>
+                  Back
+                </ion-button>
+                <h4 style="font-weight:bolder;">
+                   How many people can stay?
+                </h4>
+                <br>
+                <ion-label position="stacked">Number of desk</ion-label>
+                <ion-item class="input-style">
+                  <ion-input name="desk_quantity" ngModel placeholder="E.g. 5" type="number"></ion-input>
+                </ion-item>   
+                <br>
+              <ion-label position="stacked">Capacity per desk</ion-label>
+              <ion-item class="input-style">
+                <ion-input name="capacity" ngModel placeholder="E.g. 5" type="number"></ion-input>
+              </ion-item>
+              <br>
+              <ion-button color="main" (click)="next('d')" shape="round" style="float:right">
+                  Next 
+                 <ion-icon name="arrow-round-forward"></ion-icon>
+               </ion-button>
+               <br>
+               <br>
+               <br>
+          </div> -->
+          <div [class.c]="c">
+            <ion-button fill="clear"  (click)="prev('b')" style="color:black; ">
+                <ion-icon name="arrow-round-back"></ion-icon>
+                Back
+              </ion-button>
+              <h4 style="font-weight:bolder;">
+                Price of the product
+              </h4>
+              <br>
+              <ion-label position="stacked">Set Price</ion-label>
+              <ion-item class="input-style">
+                <ion-input type="number" name="rate" ngModel clearInput placeholder="E.g.300.00"></ion-input>
+              </ion-item>
+              <br>
+              
+              <!-- <ion-list>
+                  <ion-radio-group name="rate_type" ngModel  >
+                    <ion-label position="stacked">Rate Type</ion-label>
+                    <ion-item>
+                      <ion-label>Hour</ion-label>
+                      <ion-radio slot="start" value="hour" checked></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>Day</ion-label>
+                      <ion-radio slot="start" value="day"></ion-radio>
+                    </ion-item>
+                
+                  </ion-radio-group>
+                </ion-list> -->
+              <br>
+              <ion-button color="main" (click)="next('d')"  shape="round" style="float:right">
+                  Next 
+                 <ion-icon name="arrow-round-forward"></ion-icon>
+               </ion-button>
+               <br>
+               <br>
+               <br>
+          </div>
+          <!-- <div [class.d]="d">
+            <ion-button fill="clear"  (click)="prev('c')" style="color:black; ">
+                <ion-icon name="arrow-round-back"></ion-icon>
+                Back
+              </ion-button>
+              <h4 style="font-weight:bolder;">
+                Which amenities do you offer?
+              </h4>
+              <p>Separate input with comma (,)</p>
+            <br>
+            <ion-label position="stacked">Amenities</ion-label>
+            <ion-item class="input-style">
+                <ion-input name="amenities" ngModel clearInput placeholder="( E.g. Computer, Wifi, books)"></ion-input>
+            </ion-item> 
+            <br>
+            <ion-button color="main" (click)="next('e')"  shape="round" style="float:right">
+                Next 
+                <ion-icon name="arrow-round-forward"></ion-icon>
+              </ion-button>
+              <br>
+              <br>
+              <br>
+          </div>
+           -->
+          <div [class.d]="d">
+            <ion-button fill="clear"  (click)="prev('c')" style="color:black; ">
+                <ion-icon name="arrow-round-back"></ion-icon>
+                Back
+            </ion-button>
+            <h4 style="font-weight:bolder;">
+              Where's your place located?
+            </h4>
+            <br>
+            <ion-label position="stacked">Unit#</ion-label>
+            <ion-item>
+              <ion-input name="location_no" ngModel  placeholder="Unit#." style="padding:0%;"></ion-input>
+            </ion-item>
+            <br>
+            <ion-label position="stacked">Street</ion-label>
+            <ion-item>
+              <ion-input name="location_street" ngModel clearInput placeholder="Street"></ion-input>
+            </ion-item>
+            <br>
+            <ion-label position="stacked">Barangay</ion-label>
+            <ion-item>
+              <ion-input name="location_barangay" ngModel clearInput placeholder="Barangay" style="padding:0%;"></ion-input>
+            </ion-item>
+            <br>
+            <ion-label position="stacked">City</ion-label>
+            <ion-item>
+              <ion-input  name="location_city" ngModel  clearInput placeholder="City"></ion-input>
+            </ion-item>
+            <br>
+            <ion-label position="stacked">Provice</ion-label>
+            <ion-item>
+              <ion-input name="location_province" ngModel  clearInput placeholder="Province"></ion-input>
+            </ion-item>
+            <br>
+            <ion-button color="main" (click)="next('e')"  shape="round" style="float:right">
+                Next 
+                <ion-icon name="arrow-round-forward"></ion-icon>
+            </ion-button>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div  [class.e]="e">
+              <ion-button fill="clear"  (click)="prev('d')" style="color:black; ">
+                  <ion-icon name="arrow-round-back"></ion-icon>
+                  Back
+              </ion-button>
+              <h4 style="font-weight:bolder;">
+                Add photo
+              </h4>
+              <br>
+              <ion-label position="stacked">Upload Image</ion-label>
+                <p text-center> 
+                    <ion-img  (click)="imageupload.click()" style="margin:auto; width:110px;" [src]="previewImage"></ion-img>
+                </p>
+                <input type="file" #imageupload (change)="onChangeImage($event)" style="visibility:hidden;">
+              <br>
+              <div padding>
+                <ion-button  type="submit" color="main" expand="block"  shape="round">Post</ion-button>
+                <p text-center>
+                  <a style="color: rgb(144, 61, 96); text-decoration: none"  (click)="alertBack()" >Cancel</a>
+                </p> 
+              </div>
+            <br>
+            <br>
+            <br>
+          </div>
+          <!-- <div [class.fa]="fa">
+              <ion-button fill="clear"  (click)="prev('e')" style="color:black; ">
+                  <ion-icon name="arrow-round-back"></ion-icon>
+                  Back
+              </ion-button>
+              <h4 style="font-weight:bolder;">
+                Cramspot Availability
+              </h4>
+              <br>
+              <p position="stacked" text-center style="color:black">Opening Hours</p>
+              <ion-grid class="input-style">
+                <ion-row>
+                  <ion-col size="2">Days</ion-col>
+                  <ion-col size="4" text-center>Opening Time</ion-col>
+                  <ion-col size="2"></ion-col>
+                  <ion-col size="4" text-center>Closing Time</ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Mon</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="mon-in" ></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="mon-out" ></ion-input></ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Tue</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="tue-in"></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="tue-out"></ion-input></ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Wed</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="wed-in"></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="wed-out"></ion-input></ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Thu</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="thu-in"></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="thu-out"></ion-input></ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Fri</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="fri-in"></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="fri-out"></ion-input></ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Sat</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="sat-in"></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="sat-out"></ion-input></ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="2">Sun</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="sun-in"></ion-input></ion-col>
+                    <ion-col size="2" text-center> to</ion-col>
+                    <ion-col size="4" text-center> <ion-input type="time" ngModel name="sun-out"></ion-input></ion-col>
+                </ion-row>
+              </ion-grid>
+              <br>
+              
+            </div> -->
+        </form>
+  </div>
+        
+</ion-content>
