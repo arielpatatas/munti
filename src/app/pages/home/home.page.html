@@ -38,47 +38,25 @@
 
   </div>
   
-  <!-- <div>
-    <ion-card *ngFor="let wd of workspace" (click)="viewDetails(wd);">
-        <ion-img [src]="wd.workspace_image"></ion-img>
-        <ion-card-header>
-            <ion-card-title>₱ <span>{{ wd.rate }} / {{ wd.rate_type }}</span></ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-            <p>
-              {{ wd.type }} <br>
-              <ion-icon name="ios-people"></ion-icon> {{ wd.capacity }} people <br>
-              <ion-icon name="ios-cafe"> </ion-icon> {{ wd.amenities }} <br>
-              <ion-icon name="ios-pin"></ion-icon> {{wd.location_city}}, {{wd.location_province}}
-            </p>
-            <ion-button color="main" size="small" fill="clear" (click)="checkAvailability(wd.user_id,wd.space_id)">Check Product</ion-button>
-        </ion-card-content>
-    </ion-card>
-  </div> -->
-  
-  <!-- <div  [class.ByHour]="ByHour">
-    <ion-card *ngFor="let wr of workspacesByHour"  (click)="viewDetails(wr);">
-      <ion-img [src]="wr.workspace_image"></ion-img>
-      <ion-card-header>
-          <ion-card-title>₱ <span>{{ wr.rate }} / {{ wr.rate_type }}</span></ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-          <p>
-            {{ wr.type }} <br>
-            <ion-icon name="ios-people"></ion-icon> {{ wr.capacity }} people<br>
-            <ion-icon name="ios-cafe"></ion-icon> {{ wr.amenities }} <br>
-            <ion-icon name="ios-pin"></ion-icon> {{wr.location_city}}, {{wr.location_province}}
+   <!-- Beginning of the category card -->
+   <div class="padding_helper" color="white" (click)="CategoryTapped('Seeds')">
+      <ion-icon ios="ios-pizza" md="md-pizza"></ion-icon>
+    <div class="category__image">
+        <div class="text-center image__padding">
+          <p class="section__headline">
+            Categories
           </p>
-          <ion-button color="main" size="small" fill="clear" (click)="checkAvailability(wr.user_id,wr.space_id)">check Availability</ion-button>
-          
-      </ion-card-content>
-    </ion-card> 
-  </div > -->
-  <div>
-    <ion-card >
-      
+          <p class="nomargin category__headline">
+            Seeds
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- End of the category card -->
 
-    </ion-card>
+
+  <div>
+    
   </div>
   
 
