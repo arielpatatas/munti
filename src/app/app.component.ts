@@ -37,6 +37,11 @@ export class AppComponent {
       icon: 'notifications'
     },
     {
+      title: 'Map',
+      url: '/maps',
+      icon: 'map'
+    },
+    {
       title: 'Logout',
       url: '/login',
       icon: 'power',
