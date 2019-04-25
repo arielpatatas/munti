@@ -18,7 +18,8 @@ import { AuthenticationService } from './services/authentication.service';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from "./services/token-interceptor.service";
 
-
+//apis
+import { GoogleMaps } from "@ionic-native/google-maps/ngx";
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TokenInterceptorService } from "./services/token-interceptor.service";
      HttpClientModule, 
      FormsModule],
   providers: [
+    GoogleMaps,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
