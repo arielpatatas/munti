@@ -48,77 +48,80 @@ ion-header {
 
   
   .image_padding {
-    padding: 30px;
+    padding: 10px;
+    border-style: solid;
   }
 
   .padding_helper {
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     border-radius: 3px;
-    // background-color: white;
+    // background-color: black;
   }
   .section_headline {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: .8px;
     margin: 0;
-    line-height: .1;
+    line-height: 1;
     text-transform: uppercase;
-    color: #ffffff;
+    color: black;
+    border-color: black;
   }
 
   .category_headline {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
-    line-height: 2;
+    color: black;
+    line-height: 1;
     margin: 5px;
     text-align: center;
+    border-color: black;
   }
 
-  .category_image {
-    background-image: url('../../../assets/img/grocery.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-  }
+  // .category_image {
+  //   // background-image: url('../../../assets/img/grocery.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   border-radius: 5px;
+  // }
 
-  .category_image2 {
-    background-image: url('../../../assets/img/mens-fashion.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+  // .category_image2 {
+  //   // background-image: url('../../../assets/img/mens-fashion.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   border-radius: 5px;
+  //   margin-bottom: 10px;
+  // }
 
-  .category_image3 {
-    background-image: url('../../../assets/img/women-fashion.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  .category_image4 {
-    background-image: url('../../../assets/img/home-appliances.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+  // .category_image3 {
+  //   // background-image: url('../../../assets/img/women-fashion.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   border-radius: 5px;
+  //   margin-bottom: 10px;
+  // }
+  // .category_image4 {
+  //   // background-image: url('../../../assets/img/home-appliances.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   border-radius: 5px;
+  //   margin-bottom: 10px;
+  // }
   
-  .category_image5 {
-    background-image: url('../../../assets/img/electronic-devices.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+  // .category_image5 {
+  //   // background-image: url('../../../assets/img/electronic-devices.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   border-radius: 5px;
+  //   margin-bottom: 10px;
+  // }
 
-  .category_image6 {
-    background-image: url('../../../assets/img/health-beauty.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+  // .category_image6 {
+  //   // background-image: url('../../../assets/img/health-beauty.jpg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   border-radius: 5px;
+  //   margin-bottom: 10px;
+  // }

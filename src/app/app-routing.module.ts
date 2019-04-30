@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'list-workspace', loadChildren: './pages/list-workspace/list-workspace.module#ListWorkspacePageModule' },
   { path: 'space-details/:id', loadChildren: './pages/space-details/space-details.module#SpaceDetailsPageModule' },
   { path: 'edit-profile', loadChildren: './pages/edit-profile/edit-profile.module#EditProfilePageModule' },
-  { path: 'maps', loadChildren: './maps/maps.module#MapsPageModule' }
+  { path: 'maps', loadChildren: './maps/maps.module#MapsPageModule' },
+  { path: 'maps-modal', loadChildren: './maps-modal/maps-modal.module#MapsModalPageModule' }
 
 
 

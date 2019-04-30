@@ -28,8 +28,8 @@ export class HomeModalPage implements OnInit {
   async postAlert() {
     const alert = await this.alertController.create({
       header: 'Success',
-      subHeader: 'Your post is uploading',
-      message: 'Wait for admin to verify your post.',
+      subHeader: 'Your post is uploaded',
+      message: 'Thank you for sharing with us!',
       buttons: ['OK']
     });
 

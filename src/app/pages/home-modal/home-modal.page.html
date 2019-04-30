@@ -19,17 +19,48 @@
           <ion-item class="input-style">
             <ion-input name="title" ngModel placeholder="Enter your Product's name"></ion-input>
           </ion-item>
+        
+          
+           
 
         <form #f="ngForm" (ngSubmit)="post(f)">
+
+            <ion-label position="stacked">Select Grocery</ion-label>
+            <ion-item class="input-style">
+                <ion-select interface="popover" name="grocery" ngModel placeholder="Select One">
+                  <ion-select-option value="choas">CHOAS Supermart</ion-select-option>
+                  <ion-select-option value="ybc">YBC Supermarket</ion-select-option>
+                  <ion-select-option value="vercons1">Vercon's Rizal Triangle</ion-select-option>
+                  <ion-select-option value="vercons2">Vercons's Arthur St.</ion-select-option>
+                  <ion-select-option value="smolongapo">SM Olongapo City</ion-select-option>
+                  <ion-select-option value="puregoldhp">Puregold Harbor Point</ion-select-option>
+                  <ion-select-option value="royalcanal">Royal Duty Free Canal Road </ion-select-option>
+                  <ion-select-option value="royaldutyfree">Royal Duty Free</ion-select-option>
+                  <ion-select-option value="puregolddutyfree">Puregold Duty Free</ion-select-option>
+                 
+                  </ion-select>
+            </ion-item>   
+
+            <br>
+
             <ion-label position="stacked">Product Type</ion-label>
             <ion-item class="input-style">
                 <ion-select interface="popover" name="type" ngModel placeholder="Select One">
-                    <ion-select-option value="Food">Food</ion-select-option>
-                    <ion-select-option value="Medicine">Medicine</ion-select-option>
-                    <ion-select-option value="Service">Service</ion-select-option>
-                    <ion-select-option value="Clothing">Clothing</ion-select-option>
-                    <ion-select-option value="Pet Needs">Pet Needs</ion-select-option>
-                    
+                  <ion-select-option value="Beverages">Beverages</ion-select-option>
+                  <ion-select-option value="Snacks">Snacks</ion-select-option>
+                  <ion-select-option value="Chocolates">Chocolates</ion-select-option>
+                  <ion-select-option value="Bread">Bread</ion-select-option>
+                  <ion-select-option value="Canned/Jarred Goods">Canned/Jarred Goods</ion-select-option>
+                  <ion-select-option value="Dairy">Dairy</ion-select-option>
+                  <ion-select-option value="BakingGoods">Dry/Baking Goods</ion-select-option>
+                  <ion-select-option value="FrozenGoods">Frozen Foods</ion-select-option>
+                  <ion-select-option value="Meat">Meat</ion-select-option>
+                  <ion-select-option value="FruitsVegetables">Fruits and Vegetables</ion-select-option>
+                  <ion-select-option value="Cleaners">Cleaners</ion-select-option>
+                  <ion-select-option value="PaperGoods">Paper Goods</ion-select-option>
+                  <ion-select-option value="PersonalCare">Personal Care</ion-select-option>
+                  <ion-select-option value="Other">Other</ion-select-option>
+
                   </ion-select>
             </ion-item>   
             <br>
@@ -38,7 +69,7 @@
                 <ion-row>
                   <ion-col size="5" style="padding:0%;"> 
                     <ion-item class="input-style">
-                      <ion-input type="number" name="rate" ngModel clearInput placeholder="300"></ion-input>
+                      <ion-input type="number" name="rate" ngModel clearInput ></ion-input>
                     </ion-item>
                   </ion-col>
                   <!-- <ion-col size="7" style="padding:0%;"> 
@@ -62,7 +93,7 @@
                 <ion-input name="amenities" ngModel clearInput placeholder="(Computer, Wifi, books)"></ion-input>
             </ion-item>    -->
             <br>
-            <ion-label position="stacked">Location</ion-label>
+            <!-- <ion-label position="stacked">Location</ion-label>
             <ion-item class="input-style">
                 <ion-grid style="padding:0%;">
                     <ion-row>
@@ -95,7 +126,7 @@
                     </ion-col>
                     </ion-row>
                   </ion-grid>
-            </ion-item>   
+            </ion-item>    -->
             <br>
             <ion-label position="stacked">Upload Image</ion-label>
                 <p text-center> 
@@ -112,6 +143,8 @@
               </div>
         </form>
       </ion-card-content>
+
+
   </ion-card>
   
     
