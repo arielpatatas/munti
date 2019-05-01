@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>category-snacks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-list *ngFor="let f of items">
+    <ion-item  (click)="presentModal(f)">
+        <ion-label >
+            <h2 style="font-weight:bold">{{ f?.title }}</h2>
+            <p >{{ f?.date_added | date:'medium'}} </p> 
+            <p style="color:rgb(51, 211, 149); text-align: end" >Suggest <ion-icon name="play"></ion-icon></p> 
+          </ion-label>
+    </ion-item>
+   
+  </ion-list> -->
+
+
+
+
+  <ion-card *ngFor="let f of items">
+    <ion-img [src]="f.workspace_image"></ion-img>
+    <ion-card-header>
+        <ion-card-title> {{ f.title }}</ion-card-title>
+        <ion-card-title>₱ <span>{{ f.rate }}</span></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <p>
+          {{ f.type }} <br>
+          <ion-icon name="ios-cart"></ion-icon> {{ f.type }}  <br>
+          <ion-icon name="ios-cash"> </ion-icon> {{ f.rate }} <br>
+          <ion-icon name="ios-pin"></ion-icon> {{f.name}}
+        </p>
+        <!-- <ion-button color="main" size="small" fill="clear" (click)="checkAvailability(wd.user_id,wd.space_id)">check Availability</ion-button> -->
+        
+    </ion-card-content>
+</ion-card>
+
+
+</ion-content>

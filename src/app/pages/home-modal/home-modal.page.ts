@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PopoverController, ModalController, AlertController } from '@ionic/angular';
 import { NgForm } from '@angular/forms';
 import { WorkspaceService } from '../../services/workspace.service';
+import { StoreService } from 'src/app/services/store.service';
 
 
 @Component({
@@ -14,15 +15,20 @@ export class HomeModalPage implements OnInit {
 
   private chosenImage;
   private previewImage;
+  
+  stores:any;
+  selectedStore:any;
 
   constructor(
     private modalController:ModalController,
     private alertController: AlertController,
-    private workspaceService: WorkspaceService
+    private workspaceService: WorkspaceService,
+    public storeService: StoreService
     ) { }
 
   ngOnInit() {
     this.previewImage = "assets/icon/upload.png";
+    this.getStores();
   }
 
   async postAlert() {
@@ -45,8 +51,12 @@ export class HomeModalPage implements OnInit {
     this.chosenImage = event.target.files[0];
     this.previewImage = URL.createObjectURL(event.target.files[0]);
   }
+  selectStore(event){
+    console.log(event)
+  }
 
   post(f:NgForm){
+    console.log(this.selectedStore);
     //attach form value to form data
     let formData = new FormData();
     Object.keys(f.value).forEach(e=>{
@@ -54,6 +64,7 @@ export class HomeModalPage implements OnInit {
     });
     //append image to form data
     formData.append('workspace_image',this.chosenImage);
+    
 
     this.workspaceService.postWorkspace(formData)
       .subscribe(data=>{
@@ -61,5 +72,12 @@ export class HomeModalPage implements OnInit {
       });
   }
 
+
+    getStores(){
+      this.storeService.getStores().subscribe((Response)=>{
+        this.stores=Response;
+      })
+
+    }
   
 }

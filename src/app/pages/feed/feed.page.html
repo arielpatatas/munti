@@ -15,16 +15,7 @@
     </form> 
   </ion-card>
   
-  <ion-list *ngFor="let f of feeds">
-      <ion-item  (click)="presentModal(f)">
-          <ion-label >
-              <h2 style="font-weight:bold">{{ f?.message }}</h2>
-              <p >{{ f?.date_added | date:'medium'}} </p> 
-              <p style="color:rgb(51, 211, 149); text-align: end" >Suggest <ion-icon name="play"></ion-icon></p> 
-            </ion-label>
-      </ion-item>
-     
-    </ion-list>
+  
   
 
 </ion-content>

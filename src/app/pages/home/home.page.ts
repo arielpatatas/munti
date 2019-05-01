@@ -21,7 +21,27 @@ export class HomePage implements OnInit {
   ByHour = false;
   showToolbar = false;
 
+  types = [
+    {name: "Beverages", value: "Beverages"},
+    {name: "Food", value: "Food"},
+    {name: "Snacks", value: "Snacks"},
+    {name: "Chocolates", value: "Chocolates"},
+    {name: "Bread", value: "Bread"},
+    {name: "Canned/Jarred Goods", value: "Canned/Jarred Goods"},
+    {name: "Dairy", value: "Dairy"},
+    {name: "Dry/Baking Goods", value: "Dry/Baking Goods"},
+    {name: "Frozen Foods", value: "Frozen Foods"},
+    {name: "Meat", value: "Meat"},
+    {name: "Fruits and Vegetables", value: "Fruits and Vegetables"},
+    {name: "Cleaners", value: "Cleaners"},
+    {name: "Paper Goods", value: "Paper Goods"},
+    {name: "Personal Care", value: "Personal Care"},
+    {name: "Other", value: "Other"},
+  ];
 
+  selectCategory(type){
+    this.router.navigate(["/category-snacks/" + type]);
+  }
   constructor(
     private modalController: ModalController,
     private alertController: AlertController,
@@ -55,8 +75,6 @@ export class HomePage implements OnInit {
   }
   viewDetails(workspace){
     this.router.navigate(['/space-details',workspace.space_id]);
-   
-    
   }
   
   

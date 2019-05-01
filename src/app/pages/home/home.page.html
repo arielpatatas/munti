@@ -39,14 +39,14 @@
   </div>
 
    <!-- Beginning of the category card -->
-   <div class="padding_helper" color="white" >
+   <div class="padding_helper" color="white" *ngFor="let type of types">
     <!-- <div class="category_image"> -->
-        <div class="text-center image_padding">
+        <div class="text-center image_padding" (click)="selectCategory(type.value);">
           <!-- <p class="section_headline">
               Grocery
           </p> -->
           <p class="nomargin category_headline">
-            Beverages
+            {{type.name}}
 
           </p>
         </div>
@@ -54,188 +54,6 @@
   <!-- </div> -->
   <!-- End of the category card -->
 
-     <!-- Beginning of the category card -->
-     <div class="padding_helper" color="white" >
-      <!-- <div class="category_image2"> -->
-          <div class="text-center image_padding">
-            <!-- <p class="section_headline">
-                Grocery
-            </p> -->
-            <p class="nomargin category_headline">
-                Bread/Bakery
-  
-            </p>
-          </div>
-      </div>
-    <!-- </div> -->
-    <!-- End of the category card -->
-
-       <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image3"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Canned/Jarred Goods
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image4"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                Dry/Baking Goods
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image5"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Dairy
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Frozen Foods
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                 Meat
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Fruits/Vegetables
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Cleaners
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Paper Goods
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-           <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                  Personal Care
-
-                </p>
-              </div>
-          </div>
-        <!-- </div> -->
-        <!-- End of the category card -->
-
-         <!-- Beginning of the category card -->
-         <div class="padding_helper" color="white" >
-          <!-- <div class="category_image6"> -->
-              <div class="text-center image_padding">
-                <!-- <p class="section_headline">
-                    Grocery
-                </p> -->
-                <p class="nomargin category_headline">
-                  
-                 Other
-
-                </p>
-              </div>
-          </div>
         <!-- </div> -->
         <!-- End of the category card -->
 

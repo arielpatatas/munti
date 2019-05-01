@@ -24,7 +24,8 @@ const routes: Routes = [
   { path: 'space-details/:id', loadChildren: './pages/space-details/space-details.module#SpaceDetailsPageModule' },
   { path: 'edit-profile', loadChildren: './pages/edit-profile/edit-profile.module#EditProfilePageModule' },
   { path: 'maps', loadChildren: './maps/maps.module#MapsPageModule' },
-  { path: 'maps-modal', loadChildren: './maps-modal/maps-modal.module#MapsModalPageModule' }
+  { path: 'maps-modal', loadChildren: './maps-modal/maps-modal.module#MapsModalPageModule' },
+  { path: 'category-snacks/:id', loadChildren: './pages/category-snacks/category-snacks.module#CategorySnacksPageModule' }
 
 
 

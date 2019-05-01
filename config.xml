@@ -3,7 +3,7 @@
     <name>Munti App</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.2.116:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -86,6 +86,7 @@
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDRStloCZu1hHnBQ06fDLfPUOgbBvgN1Z8" />
     </plugin>
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyDRStloCZu1hHnBQ06fDLfPUOgbBvgN1Z8" />
+    <allow-navigation href="http://192.168.2.116:8100" sessionid="8a6d7cc1" />
     <engine name="browser" spec="5.0.4" />
     <engine name="android" spec="7.1.4" />
 </widget>

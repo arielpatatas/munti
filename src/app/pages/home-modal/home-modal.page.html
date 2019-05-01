@@ -15,28 +15,22 @@
 
       <ion-card-content>
 
-          <ion-label position="stacked">Product Name</ion-label>
-          <ion-item class="input-style">
-            <ion-input name="title" ngModel placeholder="Enter your Product's name"></ion-input>
-          </ion-item>
+          
         
           
            
 
         <form #f="ngForm" (ngSubmit)="post(f)">
 
+            <ion-label position="stacked">Product Name</ion-label>
+            <ion-item class="input-style">
+              <ion-input name="title" ngModel placeholder="Enter your Product's name"></ion-input>
+            </ion-item>
+
             <ion-label position="stacked">Select Grocery</ion-label>
             <ion-item class="input-style">
-                <ion-select interface="popover" name="grocery" ngModel placeholder="Select One">
-                  <ion-select-option value="choas">CHOAS Supermart</ion-select-option>
-                  <ion-select-option value="ybc">YBC Supermarket</ion-select-option>
-                  <ion-select-option value="vercons1">Vercon's Rizal Triangle</ion-select-option>
-                  <ion-select-option value="vercons2">Vercons's Arthur St.</ion-select-option>
-                  <ion-select-option value="smolongapo">SM Olongapo City</ion-select-option>
-                  <ion-select-option value="puregoldhp">Puregold Harbor Point</ion-select-option>
-                  <ion-select-option value="royalcanal">Royal Duty Free Canal Road </ion-select-option>
-                  <ion-select-option value="royaldutyfree">Royal Duty Free</ion-select-option>
-                  <ion-select-option value="puregolddutyfree">Puregold Duty Free</ion-select-option>
+                <ion-select interface="popover" name="store_id" ngModel>
+                  <ion-select-option value="{{store.id}}" *ngFor="let store of stores">{{ store.name }}</ion-select-option>
                  
                   </ion-select>
             </ion-item>   

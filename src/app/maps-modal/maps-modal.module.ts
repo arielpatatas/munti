@@ -7,19 +7,13 @@ import { IonicModule } from '@ionic/angular';
 
 import { MapsModalPage } from './maps-modal.page';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: MapsModalPage
-  }
-];
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
+    IonicModule
   ],
   declarations: [MapsModalPage]
 })
