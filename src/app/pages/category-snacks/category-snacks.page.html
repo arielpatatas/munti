@@ -19,7 +19,7 @@
 
 
 
-  <ion-card *ngFor="let f of items">
+  <ion-card *ngFor="let f of items" >
     <ion-img [src]="f.workspace_image"></ion-img>
     <ion-card-header>
         <ion-card-title> {{ f.title }}</ion-card-title>
@@ -30,7 +30,11 @@
           {{ f.type }} <br>
           <ion-icon name="ios-cart"></ion-icon> {{ f.type }}  <br>
           <ion-icon name="ios-cash"> </ion-icon> {{ f.rate }} <br>
-          <ion-icon name="ios-pin"></ion-icon> {{f.name}}
+          <ion-icon name="ios-pin"></ion-icon> {{f.name}} <br>
+
+          <ion-button fill="outline" slot="end" (click)="presentModal(f.title)">View Similar Items </ion-button>
+
+
         </p>
         <!-- <ion-button color="main" size="small" fill="clear" (click)="checkAvailability(wd.user_id,wd.space_id)">check Availability</ion-button> -->
         

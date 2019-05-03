@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+   
+    <a (click)="closeModal()" style="color:black; margin-left:10px; font-size: 20px"><ion-icon name="arrow-round-back"></ion-icon></a>
+    </ion-toolbar>
+        
+</ion-header>
+
+<ion-content >
+  <ion-card  *ngFor="let product of products">
+      <ion-img [src]="product.workspace_image"></ion-img>
+    <ion-item>
+      <ion-icon name="pin" slot="start">{{ product.name }}</ion-icon>
+      <ion-label>{{ product.title }}</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      {{ product.name }}
+    <br>
+      {{ product.rate }}
+    </ion-card-content>
+  </ion-card>
+
+  
+  
+    
+    
+    
+</ion-content>
