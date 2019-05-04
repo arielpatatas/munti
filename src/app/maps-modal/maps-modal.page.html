@@ -5,6 +5,9 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-input [(ngModel)]="searchinput" #searchInput>
+    </ion-input>
+    <ion-button (click)="searchProduct(searchInput.value)">Search</ion-button>
 
     <ion-card *ngFor="let f of products">
         <ion-img [src]="f.workspace_image"></ion-img>

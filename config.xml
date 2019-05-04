@@ -87,6 +87,7 @@
     </plugin>
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyDRStloCZu1hHnBQ06fDLfPUOgbBvgN1Z8" />
     <allow-navigation href="http://192.168.2.116:8100" sessionid="8a6d7cc1" />
+    <allow-navigation href="http://192.168.100.6:8100" sessionid="f9699530" />
     <engine name="browser" spec="5.0.4" />
     <engine name="android" spec="7.1.4" />
 </widget>

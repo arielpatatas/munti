@@ -23,7 +23,6 @@ export class HomePage implements OnInit {
 
   types = [
     {name: "Beverages", value: "Beverages"},
-    {name: "Food", value: "Food"},
     {name: "Snacks", value: "Snacks"},
     {name: "Chocolates", value: "Chocolates"},
     {name: "Bread", value: "Bread"},
